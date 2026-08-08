@@ -5,11 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psygnosis Solution · Human Insight. Digital Future.</title>
     <meta name="description" content="Web Development & Psychology · Solusi digital dan human capital untuk bisnis di Indonesia, dibangun oleh developer dan psikolog profesional.">
+    <link rel="canonical" href="https://psygnosis-solution.github.io/">
+    <meta name="theme-color" content="#07101f">
+    <link rel="manifest" href="manifest.json">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%A0%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="icon-180.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Psygnosis Solution">
+    <meta property="og:title" content="Psygnosis Solution · Human Insight. Digital Future.">
+    <meta property="og:description" content="Web Development & Psychology · Solusi digital dan human capital untuk bisnis di Indonesia, dibangun oleh developer dan psikolog profesional.">
+    <meta property="og:url" content="https://psygnosis-solution.github.io/">
+    <meta property="og:image" content="https://psygnosis-solution.github.io/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="id_ID">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Psygnosis Solution · Human Insight. Digital Future.">
+    <meta name="twitter:description" content="Web Development & Psychology · Solusi digital dan human capital untuk bisnis di Indonesia.">
+    <meta name="twitter:image" content="https://psygnosis-solution.github.io/og-image.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Psygnosis Solution",
+        "url": "https://psygnosis-solution.github.io/",
+        "logo": "https://psygnosis-solution.github.io/icon-512.png",
+        "image": "https://psygnosis-solution.github.io/og-image.png",
+        "description": "Web Development and Psychology, solusi digital dan human capital untuk bisnis di Indonesia.",
+        "email": "psygnosisolution@gmail.com",
+        "sameAs": ["https://www.instagram.com/psygnosis_solution/"],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+62-819-0635-550",
+            "contactType": "customer service",
+            "email": "psygnosisolution@gmail.com"
+        }
+    }
+    </script>
 </head>
 <body>
 
@@ -21,11 +58,12 @@
                 <li><a href="#services" data-id="nav-services">Layanan</a></li>
                 <li><a href="#why" data-id="nav-why">Keunggulan</a></li>
                 <li><a href="#process" data-id="nav-process">Proses</a></li>
+                <li><a href="#faq" data-id="nav-faq">FAQ</a></li>
                 <li><a href="#portfolio" data-id="nav-portfolio">Portfolio</a></li>
             </ul>
             <button class="lang-toggle" id="langToggle">EN</button>
             <a href="https://wa.me/628190635550?text=Halo%20Psygnosis%20Solution%2C%20saya%20tertarik%20dengan%20layanan%20kalian." class="btn-sm" target="_blank" rel="noopener" data-id="nav-cta">Hubungi Kami</a>
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileMenu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -33,12 +71,13 @@
         </div>
     </nav>
 
-    <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
         <ul>
             <li><a href="#about" class="mobile-link" data-id="mob-about">Tentang</a></li>
             <li><a href="#services" class="mobile-link" data-id="mob-services">Layanan</a></li>
             <li><a href="#why" class="mobile-link" data-id="mob-why">Keunggulan</a></li>
             <li><a href="#process" class="mobile-link" data-id="mob-process">Proses</a></li>
+            <li><a href="#faq" class="mobile-link" data-id="mob-faq">FAQ</a></li>
             <li><a href="#portfolio" class="mobile-link" data-id="mob-portfolio">Portfolio</a></li>
             <li><a href="https://wa.me/628190635550?text=Halo%20Psygnosis%20Solution%2C%20saya%20tertarik%20dengan%20layanan%20kalian." target="_blank" rel="noopener" class="mobile-link" data-id="mob-cta">Hubungi Kami</a></li>
         </ul>
@@ -62,11 +101,11 @@
             </div>
             <div class="hero-visual">
                 <div class="hv-card hv-tech">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&q=80&fit=crop" alt="Kode program di layar developer">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&q=80&fit=crop" width="700" height="467" loading="eager" fetchpriority="high" decoding="async" alt="Kode program di layar developer" data-alt-id="hv-tech-alt">
                     <span class="hv-badge hv-badge-tech" data-id="hv-tech-badge">Tech</span>
                 </div>
                 <div class="hv-card hv-psych">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&q=80&fit=crop" alt="Sesi konsultasi psikologi">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&q=80&fit=crop" width="700" height="467" loading="eager" decoding="async" alt="Sesi konsultasi psikologi" data-alt-id="hv-psych-alt">
                     <span class="hv-badge hv-badge-psych" data-id="hv-psych-badge">Psikologi</span>
                 </div>
                 <div class="hv-connector"></div>
@@ -97,7 +136,7 @@
 
     <section id="about">
         <div class="about-banner reveal">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1400&q=75&fit=crop" alt="Kolaborasi tim Psygnosis Solution">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1400&q=75&fit=crop" width="1400" height="750" loading="lazy" decoding="async" alt="Kolaborasi tim Psygnosis Solution" data-alt-id="about-banner-alt">
             <div class="about-banner-overlay">
                 <div class="section-label centered light" data-id="sec-about">Tentang Kami</div>
                 <h2 class="banner-title" data-id="about-title">Dua Pikiran.<br>Satu <em>Visi.</em></h2>
@@ -257,30 +296,54 @@
 
     <div class="sep"></div>
 
+    <section id="faq">
+        <div class="section-label" data-id="sec-faq">Pertanyaan Umum</div>
+        <h2 class="reveal">Sebelum Kamu<br><em>Bertanya.</em></h2>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>
+                    <span data-id="faq-1-q">Apakah konsultasi pertama benar-benar gratis?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                </summary>
+                <p data-id="faq-1-a">Ya. Ceritakan kebutuhanmu lewat WhatsApp atau DM Instagram, tidak ada kewajiban dan tidak ada biaya di tahap awal ini.</p>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    <span data-id="faq-2-q">Apakah bisa kerja sama walau beda kota atau pulau?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                </summary>
+                <p data-id="faq-2-a">Bisa. Kami bekerja 100% digital dan remote, jadi klien dari mana pun di Indonesia bisa kami layani tanpa perlu bertemu tatap muka.</p>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    <span data-id="faq-3-q">Bagaimana kerahasiaan data konsultasi psikologi dijaga?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                </summary>
+                <p data-id="faq-3-a">Konsultasi psikologi kami jalankan secara profesional dan kerahasiaan data klien selalu terjaga, baik untuk individu maupun organisasi.</p>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    <span data-id="faq-4-q">Bagaimana cara kerja dan penentuan biayanya?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                </summary>
+                <p data-id="faq-4-a">Setelah konsultasi awal, kami kirimkan proposal berisi ruang lingkup, timeline, dan rincian biaya secara jelas di depan, tanpa biaya tersembunyi di tengah jalan.</p>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    <span data-id="faq-5-q">Apakah ada dukungan setelah project selesai?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                </summary>
+                <p data-id="faq-5-a">Ada. Project diserahkan lengkap dengan dokumentasi, dan kami tetap siap membantu untuk pertanyaan maupun dukungan pasca serah terima.</p>
+            </details>
+        </div>
+    </section>
+
+    <div class="sep"></div>
+
     <section id="portfolio">
         <div class="section-label" data-id="sec-portfolio">Portfolio</div>
         <h2 class="reveal">Project yang<br>Telah Kami <em>Bangun.</em></h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-card reveal">
-                <a href="https://psygnosis-solution.github.io/portofolio/kopi-rimba" target="_blank" rel="noopener" class="portfolio-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=800&q=80&fit=crop" alt="Kopi Rimba">
-                    <div class="portfolio-overlay">
-                        <span data-id="portfolio-view">Lihat Demo</span>
-                    </div>
-                </a>
-                <div class="portfolio-body">
-                    <div class="portfolio-tags">
-                        <span class="ptag ptag-live"><span class="live-dot"></span>Live</span>
-                        <span class="ptag">HTML</span>
-                        <span class="ptag">CSS</span>
-                        <span class="ptag">JavaScript</span>
-                    </div>
-                    <h3>Kopi Rimba</h3>
-                    <p data-id="portfolio-1-desc">Landing page premium untuk kafe dengan konsep alam. Navbar dinamis, galeri foto, section menu interaktif, dan integrasi WhatsApp.</p>
-                    <a href="https://psygnosis-solution.github.io/portofolio/kopi-rimba" target="_blank" rel="noopener" class="portfolio-link" data-id="portfolio-link">Lihat Demo &rarr;</a>
-                </div>
-            </div>
-        </div>
+        <div class="portfolio-grid" id="portfolioGrid"></div>
     </section>
 
     <div class="cta-section">
@@ -304,6 +367,8 @@
             <a href="https://wa.me/628190635550" target="_blank" rel="noopener">WhatsApp</a>
         </div>
     </footer>
+
+    <a href="https://wa.me/628190635550?text=Halo%20Psygnosis%20Solution%2C%20saya%20tertarik%20dengan%20layanan%20kalian." target="_blank" rel="noopener" class="wa-float" id="waFloat" aria-label="Chat WhatsApp">💬</a>
 
     <script src="js/main.js"></script>
 </body>
