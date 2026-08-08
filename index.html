@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psygnosis Solution — Human Insight. Digital Future.</title>
-    <meta name="description" content="Web Development & Psychology — Solusi Digital dan Human Capital untuk bisnis Indonesia.">
+    <title>Psygnosis Solution · Human Insight. Digital Future.</title>
+    <meta name="description" content="Web Development & Psychology · Solusi digital dan human capital untuk bisnis di Indonesia, dibangun oleh developer dan psikolog profesional.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%A0%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,6 +16,7 @@
         <a href="#" class="brand">Psygnosis<span>.</span>Solution</a>
         <div class="nav-right">
             <ul class="nav-links">
+                <li><a href="#about" data-id="nav-about">Tentang</a></li>
                 <li><a href="#services" data-id="nav-services">Layanan</a></li>
                 <li><a href="#why" data-id="nav-why">Keunggulan</a></li>
                 <li><a href="#process" data-id="nav-process">Proses</a></li>
@@ -22,11 +24,17 @@
             </ul>
             <button class="lang-toggle" id="langToggle">EN</button>
             <a href="https://wa.me/628190635550?text=Halo%20Psygnosis%20Solution%2C%20saya%20tertarik%20dengan%20layanan%20kalian." class="btn-sm" target="_blank" rel="noopener" data-id="nav-cta">Hubungi Kami</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
     <div class="mobile-menu" id="mobileMenu">
         <ul>
+            <li><a href="#about" class="mobile-link" data-id="mob-about">Tentang</a></li>
             <li><a href="#services" class="mobile-link" data-id="mob-services">Layanan</a></li>
             <li><a href="#why" class="mobile-link" data-id="mob-why">Keunggulan</a></li>
             <li><a href="#process" class="mobile-link" data-id="mob-process">Proses</a></li>
@@ -36,17 +44,29 @@
     </div>
 
     <div class="hero">
-        <div class="eyebrow" data-id="hero-eyebrow">Inspired by Mind, Refined by Technology</div>
-        <h1>Human <span class="c">Insight.</span><br>Digital <span class="p">Future.</span></h1>
-        <p class="hero-desc" data-id="hero-desc">Di mana psikologi bertemu teknologi. Kami membangun solusi digital dan memberikan konsultasi human capital — membantu bisnis tumbuh dari dalam.</p>
-        <div class="btn-group">
-            <a href="https://wa.me/628190635550?text=Halo%20Psygnosis%20Solution%2C%20saya%20tertarik%20dengan%20layanan%20kalian." class="btn-primary" target="_blank" rel="noopener" data-id="hero-cta">Mulai Konsultasi Gratis</a>
-            <a href="#services" class="btn-ghost" data-id="hero-explore">Lihat Layanan</a>
-        </div>
-        <div class="tags">
-            <div class="tag"><span class="dot dc"></span><span data-id="tag-1">Full Stack Web Development</span></div>
-            <div class="tag"><span class="dot dp"></span><span data-id="tag-2">Psikologi &amp; Konsultasi HR</span></div>
-            <div class="tag"><span class="dot dc"></span><span data-id="tag-3">Seluruh Indonesia &middot; Remote</span></div>
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="eyebrow" data-id="hero-eyebrow">Inspired by Mind, Refined by Technology</div>
+                <h1>Human <span class="c">Insight.</span><br>Digital <span class="p">Future.</span></h1>
+                <p class="hero-desc" data-id="hero-desc">Di mana psikologi bertemu teknologi. Kami membangun solusi digital dan memberikan konsultasi human capital untuk membantu bisnis tumbuh dari dalam.</p>
+                <div class="btn-group">
+                    <a href="https://wa.me/628190635550?text=Halo%20Psygnosis%20Solution%2C%20saya%20tertarik%20dengan%20layanan%20kalian." class="btn-primary" target="_blank" rel="noopener" data-id="hero-cta">Mulai Konsultasi Gratis</a>
+                    <a href="#services" class="btn-ghost" data-id="hero-explore">Lihat Layanan</a>
+                </div>
+                <div class="tags">
+                    <div class="tag"><span class="dot dc"></span><span data-id="tag-1">Full Stack Web Development</span></div>
+                    <div class="tag"><span class="dot dp"></span><span data-id="tag-2">Psikologi &amp; Konsultasi HR</span></div>
+                    <div class="tag"><span class="dot dc"></span><span data-id="tag-3">Seluruh Indonesia &middot; Remote</span></div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hv-card hv-tech">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&q=80&fit=crop" alt="Kode program di layar developer">
+                </div>
+                <div class="hv-card hv-psych">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&q=80&fit=crop" alt="Sesi konsultasi psikologi">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -71,11 +91,48 @@
         </div>
     </div>
 
+    <section id="about">
+        <div class="about-banner">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1400&q=75&fit=crop" alt="Kolaborasi tim Psygnosis Solution">
+            <div class="about-banner-overlay">
+                <div class="section-label centered light" data-id="sec-about">Tentang Kami</div>
+                <h2 class="banner-title" data-id="about-title">Dua Pikiran.<br>Satu <em>Visi.</em></h2>
+            </div>
+        </div>
+        <p class="about-intro" data-id="about-intro">Psygnosis Solution lahir dari kolaborasi dua bidang yang jarang bersanding dalam satu usaha, teknologi digital dan psikologi. Didirikan oleh pasangan suami istri, seorang full stack web developer dan seorang psikolog sekaligus praktisi HR, kami percaya bisnis yang bertumbuh sehat butuh sistem yang solid sekaligus manusia yang dipahami dengan baik.</p>
+        <div class="founders-grid">
+            <div class="founder-card">
+                <div class="founder-avatar fa-tech">💻</div>
+                <div class="founder-role" data-id="founder-1-role">Co-Founder</div>
+                <h3 data-id="founder-1-title">Full Stack Web Developer</h3>
+                <p data-id="founder-1-desc">Merancang dan membangun sistem digital dari nol, mulai dari arsitektur backend, antarmuka pengguna, hingga integrasi yang membuat bisnis berjalan lebih efisien.</p>
+                <div class="founder-skills">
+                    <span class="fskill">Web Development</span>
+                    <span class="fskill">System Architecture</span>
+                    <span class="fskill">UI Engineering</span>
+                </div>
+            </div>
+            <div class="founder-card">
+                <div class="founder-avatar fa-psych">🧠</div>
+                <div class="founder-role" data-id="founder-2-role">Co-Founder</div>
+                <h3 data-id="founder-2-title">Psikolog &amp; HR Consultant</h3>
+                <p data-id="founder-2-desc">Memahami sisi manusia di balik setiap bisnis, dari asesmen psikologi, strategi rekrutmen, hingga pengembangan budaya kerja yang sehat dan berkelanjutan.</p>
+                <div class="founder-skills">
+                    <span class="fskill">Psychological Assessment</span>
+                    <span class="fskill">HR Strategy</span>
+                    <span class="fskill">Organizational Development</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sep"></div>
+
     <section id="services">
         <div class="section-label" data-id="sec-services">Layanan Kami</div>
         <h2>Dua Dunia.<br>Satu <em>Solusi.</em></h2>
         <div class="services-grid">
-            <div class="svc-col">
+            <div class="svc-col svc-tech">
                 <div class="svc-col-head">
                     <div class="svc-icon ic-tech">🖥️</div>
                     <div class="svc-col-title">
@@ -85,7 +142,7 @@
                 </div>
                 <div class="svc-item">
                     <div class="svc-name" data-id="svc-1-name">Full Stack Web Development</div>
-                    <div class="svc-desc" data-id="svc-1-desc">Website &amp; aplikasi web custom — dari company profile hingga sistem manajemen kompleks, dibangun dengan teknologi modern.</div>
+                    <div class="svc-desc" data-id="svc-1-desc">Website &amp; aplikasi web custom, dari company profile hingga sistem manajemen kompleks, dibangun dengan teknologi modern.</div>
                 </div>
                 <div class="svc-item">
                     <div class="svc-name" data-id="svc-2-name">Template &amp; UI Kit</div>
@@ -93,14 +150,14 @@
                 </div>
                 <div class="svc-item">
                     <div class="svc-name" data-id="svc-3-name">Source Code &amp; Script</div>
-                    <div class="svc-desc" data-id="svc-3-desc">Script siap produksi — sistem kasir, manajemen inventori, REST API, sistem CRUD, dan masih banyak lagi.</div>
+                    <div class="svc-desc" data-id="svc-3-desc">Script siap produksi: sistem kasir, manajemen inventori, REST API, sistem CRUD, dan masih banyak lagi.</div>
                 </div>
                 <div class="svc-item">
                     <div class="svc-name" data-id="svc-4-name">Konsultasi &amp; Mentoring Tech</div>
                     <div class="svc-desc" data-id="svc-4-desc">Butuh partner teknis? Kami konsultasi, bimbing, dan mentor developer serta pemilik bisnis di setiap tahap.</div>
                 </div>
             </div>
-            <div class="svc-col">
+            <div class="svc-col svc-psych">
                 <div class="svc-col-head">
                     <div class="svc-icon ic-psych">🧠</div>
                     <div class="svc-col-title">
@@ -110,7 +167,7 @@
                 </div>
                 <div class="svc-item">
                     <div class="svc-name" data-id="svc-5-name">Konsultasi Psikologi</div>
-                    <div class="svc-desc" data-id="svc-5-desc">Konsultasi psikologi profesional untuk individu dan organisasi — berbasis bukti ilmiah, praktis, dan terjaga kerahasiaannya.</div>
+                    <div class="svc-desc" data-id="svc-5-desc">Konsultasi psikologi profesional untuk individu dan organisasi, berbasis bukti ilmiah, praktis, dan terjaga kerahasiaannya.</div>
                 </div>
                 <div class="svc-item">
                     <div class="svc-name" data-id="svc-6-name">Solusi HR &amp; Rekrutmen</div>
@@ -118,11 +175,11 @@
                 </div>
                 <div class="svc-item">
                     <div class="svc-name" data-id="svc-7-name">Asesmen Psikometri</div>
-                    <div class="svc-desc" data-id="svc-7-desc">Alat ukur tervalidasi untuk kepribadian, aptitude, dan kesesuaian budaya — untuk rekrutmen, promosi, dan pengembangan tim.</div>
+                    <div class="svc-desc" data-id="svc-7-desc">Alat ukur tervalidasi untuk kepribadian, aptitude, dan kesesuaian budaya, untuk rekrutmen, promosi, dan pengembangan tim.</div>
                 </div>
                 <div class="svc-item">
                     <div class="svc-name" data-id="svc-8-name">Pengembangan Organisasi</div>
-                    <div class="svc-desc" data-id="svc-8-desc">Membangun tim dan lingkungan kerja yang lebih sehat — pemetaan budaya, program well-being, dan kerangka kinerja.</div>
+                    <div class="svc-desc" data-id="svc-8-desc">Membangun tim dan lingkungan kerja yang lebih sehat: pemetaan budaya, program well-being, dan kerangka kinerja.</div>
                 </div>
             </div>
         </div>
@@ -135,24 +192,24 @@
         <h2>Berbeda.<br><em>Dengan Tujuan.</em></h2>
         <div class="why-grid">
             <div class="why-card">
-                <div class="why-num">01 ——</div>
+                <div class="why-num">01</div>
                 <h3 data-id="why-1-title">Persimpangan Unik</h3>
                 <p data-id="why-1-desc">Salah satu yang langka: menjembatani teknologi dan psikologi. Tantangan digital dan human bisnis kamu, diselesaikan dalam satu atap.</p>
             </div>
             <div class="why-card">
-                <div class="why-num">02 ——</div>
+                <div class="why-num">02</div>
                 <h3 data-id="why-2-title">Tanpa Batas Wilayah</h3>
-                <p data-id="why-2-desc">100% digital dan remote. Kami melayani klien di seluruh Indonesia — di mana pun kamu berada, kami siap bekerja sama.</p>
+                <p data-id="why-2-desc">100% digital dan remote. Kami melayani klien di seluruh Indonesia, di mana pun kamu berada, kami siap bekerja sama.</p>
             </div>
             <div class="why-card">
-                <div class="why-num">03 ——</div>
+                <div class="why-num">03</div>
                 <h3 data-id="why-3-title">Transparan &amp; Jujur</h3>
                 <p data-id="why-3-desc">Harga jelas di awal, update progres rutin, dan tidak menghilang setelah deal. Profesional dan bertanggung jawab penuh.</p>
             </div>
             <div class="why-card">
-                <div class="why-num">04 ——</div>
+                <div class="why-num">04</div>
                 <h3 data-id="why-4-title">Solusi, Bukan Sekadar Output</h3>
-                <p data-id="why-4-desc">Kami pahami tujuanmu lebih dulu, baru membangun yang tepat — bukan template generik yang asal jadi.</p>
+                <p data-id="why-4-desc">Kami pahami tujuanmu lebih dulu, baru membangun yang tepat, bukan template generik yang asal jadi.</p>
             </div>
         </div>
     </section>
@@ -174,7 +231,7 @@
                 <div class="step-num" data-id="step-2-num">Langkah 02</div>
                 <div class="step-body">
                     <h3 data-id="step-2-title">Proposal &amp; Harga Transparan</h3>
-                    <p data-id="step-2-desc">Kami kirimkan proposal yang jelas — ruang lingkup, timeline, dan rincian biaya. Tidak ada biaya tersembunyi. Kamu yang memutuskan.</p>
+                    <p data-id="step-2-desc">Kami kirimkan proposal yang jelas: ruang lingkup, timeline, dan rincian biaya. Tidak ada biaya tersembunyi. Kamu yang memutuskan.</p>
                 </div>
             </div>
             <div class="process-step">
@@ -235,7 +292,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 <a href="#">Psygnosis Solution</a> &middot; All rights reserved</p>
+        <p>&copy; <span id="year"></span> <a href="#">Psygnosis Solution</a> &middot; All rights reserved</p>
         <div class="foot-links">
             <a href="https://www.instagram.com/psygnosis_solution/" target="_blank" rel="noopener">Instagram</a>
             <a href="mailto:psygnosisolution@gmail.com">Email</a>
