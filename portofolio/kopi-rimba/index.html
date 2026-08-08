@@ -3,13 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kopi Rimba — Rasa Alam, Jiwa Bebas</title>
-    <meta name="description" content="Kopi Rimba — kafe dengan konsep alam dan hutan di jantung kota. Nikmati kopi terbaik dalam suasana yang tenang dan aesthetic.">
+    <title>Kopi Rimba, Rasa Alam Jiwa Bebas</title>
+    <meta name="description" content="Kopi Rimba, kafe dengan konsep alam dan hutan di jantung kota. Nikmati kopi terbaik dalam suasana yang tenang dan aesthetic.">
+    <link rel="canonical" href="https://psygnosis-solution.github.io/portofolio/kopi-rimba/">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#0f0e0c">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="icon-180.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kopi Rimba, Rasa Alam Jiwa Bebas">
+    <meta property="og:description" content="Kopi Rimba, kafe dengan konsep alam dan hutan di jantung kota. Nikmati kopi terbaik dalam suasana yang tenang dan aesthetic.">
+    <meta property="og:image" content="https://psygnosis-solution.github.io/portofolio/kopi-rimba/og-image.png">
+    <meta property="og:url" content="https://psygnosis-solution.github.io/portofolio/kopi-rimba/">
+    <meta property="og:locale" content="id_ID">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kopi Rimba, Rasa Alam Jiwa Bebas">
+    <meta name="twitter:description" content="Kopi Rimba, kafe dengan konsep alam dan hutan di jantung kota. Nikmati kopi terbaik dalam suasana yang tenang dan aesthetic.">
+    <meta name="twitter:image" content="https://psygnosis-solution.github.io/portofolio/kopi-rimba/og-image.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "Kopi Rimba",
+        "description": "Project studi kasus dari Psygnosis Solution. Kafe dengan konsep alam dan hutan, bukan bisnis nyata.",
+        "servesCuisine": "Coffee",
+        "priceRange": "Rp 20.000 - Rp 42.000",
+        "url": "https://psygnosis-solution.github.io/portofolio/kopi-rimba/"
+    }
+    </script>
 </head>
 <body>
+    <a href="#konten-utama" class="skip-link">Lewati ke konten utama</a>
+    <div class="demo-banner">
+        <span>Ini adalah project studi kasus dari Psygnosis Solution, bukan bisnis nyata.</span>
+        <a href="https://psygnosis-solution.github.io/#portfolio">Kembali ke Portfolio Psygnosis</a>
+    </div>
     <nav id="navbar">
         <div class="nav-left">
             <a href="#" class="brand">Kopi<span>Rimba</span></a>
@@ -26,7 +59,7 @@
             <a href="tel:+628100000000" class="nav-contact">0810-0000-0000</a>
             <div class="nav-divider"></div>
             <a href="https://wa.me/628100000000?text=Halo%20Kopi%20Rimba%2C%20saya%20ingin%20reservasi." class="btn-reservasi" target="_blank" rel="noopener">Reservasi</a>
-            <button class="nav-toggle" id="navToggle">
+            <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mobileMenu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -34,7 +67,8 @@
         </div>
     </nav>
 
-    <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu navigasi" aria-hidden="true">
         <ul>
             <li><a href="#menu" class="mobile-link">Menu</a></li>
             <li><a href="#about" class="mobile-link">Tentang</a></li>
@@ -43,9 +77,9 @@
         </ul>
     </div>
 
-    <section class="hero">
+    <section class="hero" id="konten-utama">
         <div class="hero-img-wrap">
-            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1600&q=85&fit=crop" alt="Kopi Rimba Hero" class="hero-img">
+            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1600&q=85&fit=crop" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async" alt="Suasana Kopi Rimba dengan konsep alam dan hutan" class="hero-img">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
@@ -57,44 +91,50 @@
                 <a href="https://wa.me/628100000000?text=Halo%20Kopi%20Rimba%2C%20saya%20ingin%20reservasi." class="btn-outline" target="_blank" rel="noopener">Reservasi Meja</a>
             </div>
         </div>
-        <div class="hero-scroll">
+        <a href="#menu" class="hero-scroll">
             <span>scroll</span>
             <div class="scroll-line"></div>
-        </div>
+        </a>
     </section>
 
-    <section class="stats">
+    <section class="stats reveal">
         <div class="stats-inner">
             <div class="stat-item">
-                <div class="stat-num">47+</div>
+                <div class="stat-num" data-target="47" data-suffix="+">0</div>
                 <div class="stat-label">Menu Pilihan</div>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
-                <div class="stat-num">4.9</div>
+                <div class="stat-num" data-target="4.9" data-decimal="1">0</div>
                 <div class="stat-label">Rating Google</div>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
-                <div class="stat-num">5rb+</div>
+                <div class="stat-num" data-target="5" data-suffix="rb+">0</div>
                 <div class="stat-label">Pelanggan Setia</div>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
-                <div class="stat-num">3</div>
+                <div class="stat-num" data-target="3" data-suffix="">0</div>
                 <div class="stat-label">Cabang</div>
             </div>
         </div>
     </section>
 
-    <section class="menu" id="menu">
+    <section class="menu reveal" id="menu">
         <div class="container">
             <div class="section-label">Menu Unggulan</div>
             <h2>Yang Paling<br>Dicintai Pelanggan</h2>
+            <div class="menu-filters" role="tablist" aria-label="Filter kategori menu">
+                <button class="menu-filter active" data-filter="semua" role="tab" aria-selected="true">Semua</button>
+                <button class="menu-filter" data-filter="kopi" role="tab" aria-selected="false">Kopi</button>
+                <button class="menu-filter" data-filter="non-kopi" role="tab" aria-selected="false">Non-Kopi</button>
+                <button class="menu-filter" data-filter="snack" role="tab" aria-selected="false">Snack</button>
+            </div>
             <div class="menu-grid">
-                <div class="menu-card">
+                <div class="menu-card" data-category="kopi">
                     <div class="menu-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80&fit=crop" alt="Rimba Latte">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80&fit=crop" width="600" height="220" loading="lazy" decoding="async" alt="Rimba Latte">
                         <div class="menu-tag">Best Seller</div>
                     </div>
                     <div class="menu-body">
@@ -105,9 +145,9 @@
                         <p>Espresso segar dengan susu oat creamy, sentuhan sirup pandan, dan busa susu lembut di atasnya.</p>
                     </div>
                 </div>
-                <div class="menu-card">
+                <div class="menu-card" data-category="kopi">
                     <div class="menu-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80&fit=crop" alt="Cold Brew Hutan">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80&fit=crop" width="600" height="220" loading="lazy" decoding="async" alt="Cold Brew Hutan">
                         <div class="menu-tag">New</div>
                     </div>
                     <div class="menu-body">
@@ -118,21 +158,9 @@
                         <p>Cold brew 18 jam dengan infusi daun pandan segar, jeruk nipis, dan es batu kristal.</p>
                     </div>
                 </div>
-                <div class="menu-card">
+                <div class="menu-card" data-category="kopi">
                     <div class="menu-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=600&q=80&fit=crop" alt="Matcha Rimba">
-                    </div>
-                    <div class="menu-body">
-                        <div class="menu-top">
-                            <h3>Matcha Rimba</h3>
-                            <span class="menu-price">Rp 40.000</span>
-                        </div>
-                        <p>Matcha grade premium Jepang, diseduh dengan susu almond dan madu hutan asli pilihan.</p>
-                    </div>
-                </div>
-                <div class="menu-card">
-                    <div class="menu-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=600&q=80&fit=crop" alt="Kopi Tubruk Rimba">
+                        <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=600&q=80&fit=crop" width="600" height="220" loading="lazy" decoding="async" alt="Kopi Tubruk Rimba">
                         <div class="menu-tag">Favorit</div>
                     </div>
                     <div class="menu-body">
@@ -143,23 +171,72 @@
                         <p>Kopi robusta Flores digiling kasar, diseduh tradisional, dihidangkan dengan gula aren cair.</p>
                     </div>
                 </div>
+                <div class="menu-card" data-category="non-kopi">
+                    <div class="menu-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=600&q=80&fit=crop" width="600" height="220" loading="lazy" decoding="async" alt="Matcha Rimba">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-top">
+                            <h3>Matcha Rimba</h3>
+                            <span class="menu-price">Rp 40.000</span>
+                        </div>
+                        <p>Matcha grade premium Jepang, diseduh dengan susu almond dan madu hutan asli pilihan.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="non-kopi">
+                    <div class="menu-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&q=80&fit=crop" width="600" height="220" loading="lazy" decoding="async" alt="Teh Serai Hutan">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-top">
+                            <h3>Teh Serai Hutan</h3>
+                            <span class="menu-price">Rp 25.000</span>
+                        </div>
+                        <p>Teh serai segar dengan sentuhan jahe dan madu hutan, disajikan hangat atau dingin.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="snack">
+                    <div class="menu-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1584734894094-1de4b4e0b5f9?w=600&q=80&fit=crop" width="600" height="220" loading="lazy" decoding="async" alt="Roti Bakar Rimba">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-top">
+                            <h3>Roti Bakar Rimba</h3>
+                            <span class="menu-price">Rp 22.000</span>
+                        </div>
+                        <p>Roti bakar dengan olesan selai kopi dan keju, dipanggang hingga renyah di pinggirnya.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="snack">
+                    <div class="menu-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1587132137056-bfbf0166836e?w=600&q=80&fit=crop" width="600" height="220" loading="lazy" decoding="async" alt="Pisang Goreng Madu">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-top">
+                            <h3>Pisang Goreng Madu</h3>
+                            <span class="menu-price">Rp 20.000</span>
+                        </div>
+                        <p>Pisang goreng crispy disiram madu hutan asli dan taburan kacang almond cincang.</p>
+                    </div>
+                </div>
             </div>
+            <p class="menu-empty" hidden>Belum ada menu di kategori ini.</p>
             <div class="menu-cta">
-                <a href="https://wa.me/628100000000?text=Halo%20Kopi%20Rimba%2C%20boleh%20lihat%20menu%20lengkapnya?" class="btn-primary" target="_blank" rel="noopener">Lihat Menu Lengkap</a>
+                <a href="https://wa.me/628100000000?text=Halo%20Kopi%20Rimba%2C%20saya%20ingin%20pesan." class="btn-primary" target="_blank" rel="noopener">Pesan Sekarang via WhatsApp</a>
             </div>
         </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about reveal" id="about">
         <div class="about-img-wrap">
-            <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=900&q=85&fit=crop" alt="Suasana Kopi Rimba">
+            <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=900&q=85&fit=crop" width="900" height="600" loading="lazy" decoding="async" alt="Suasana Kopi Rimba">
             <div class="about-img-overlay"></div>
         </div>
         <div class="about-content">
             <div class="section-label">Tentang Kami</div>
             <h2>Bukan Sekadar<br>Kafe Biasa.</h2>
             <p>Kopi Rimba lahir dari kecintaan mendalam terhadap alam dan budaya ngopi Indonesia. Kami percaya bahwa secangkir kopi yang baik bisa menghadirkan ketenangan di tengah kesibukan.</p>
-            <p>Setiap biji kopi kami dipilih langsung dari petani lokal di Flores, Toraja, dan Gayo — memastikan kualitas terbaik sekaligus mendukung kesejahteraan petani.</p>
+            <p>Setiap biji kopi kami dipilih langsung dari petani lokal di Flores, Toraja, dan Gayo, memastikan kualitas terbaik sekaligus mendukung kesejahteraan petani.</p>
             <div class="about-features">
                 <div class="feat-item">
                     <div class="feat-icon">🌱</div>
@@ -186,24 +263,29 @@
         </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery reveal">
         <div class="gallery-grid">
-            <div class="gallery-item tall">
-                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80&fit=crop" alt="Suasana kafe">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600&q=80&fit=crop" alt="Kopi diseduh">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&q=80&fit=crop" alt="Interior kafe">
-            </div>
-            <div class="gallery-item tall">
-                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80&fit=crop" alt="Latte art">
-            </div>
+            <button type="button" class="gallery-item tall" data-lightbox="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1400&q=85&fit=crop" aria-label="Perbesar foto suasana kafe">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80&fit=crop" width="600" height="480" loading="lazy" decoding="async" alt="Suasana kafe">
+            </button>
+            <button type="button" class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=1400&q=85&fit=crop" aria-label="Perbesar foto kopi diseduh">
+                <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600&q=80&fit=crop" width="600" height="240" loading="lazy" decoding="async" alt="Kopi diseduh">
+            </button>
+            <button type="button" class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1400&q=85&fit=crop" aria-label="Perbesar foto interior kafe">
+                <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&q=80&fit=crop" width="600" height="240" loading="lazy" decoding="async" alt="Interior kafe">
+            </button>
+            <button type="button" class="gallery-item tall" data-lightbox="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1400&q=85&fit=crop" aria-label="Perbesar foto latte art">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80&fit=crop" width="600" height="480" loading="lazy" decoding="async" alt="Latte art">
+            </button>
         </div>
     </section>
 
-    <section class="visit" id="visit">
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Pratinjau foto" aria-hidden="true">
+        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Tutup pratinjau foto">&times;</button>
+        <img src="" alt="" id="lightboxImg">
+    </div>
+
+    <section class="visit reveal" id="visit">
         <div class="container">
             <div class="visit-inner">
                 <div class="visit-info">
@@ -221,7 +303,7 @@
                             <div class="visit-icon">🕐</div>
                             <div>
                                 <strong>Jam Buka</strong>
-                                <span>Setiap hari · 07.00 — 22.00 WIB</span>
+                                <span>Setiap hari, 07.00 sampai 22.00 WIB</span>
                             </div>
                         </div>
                         <div class="visit-item">
@@ -235,23 +317,21 @@
                             <div class="visit-icon">📸</div>
                             <div>
                                 <strong>Instagram</strong>
-                                <span>@kopirimba.id</span>
+                                <span><a href="https://www.instagram.com/kopirimba.id" target="_blank" rel="noopener" class="visit-link">@kopirimba.id</a></span>
                             </div>
                         </div>
                     </div>
                     <a href="https://wa.me/628100000000?text=Halo%20Kopi%20Rimba%2C%20saya%20ingin%20reservasi." class="btn-primary" target="_blank" rel="noopener">Reservasi via WhatsApp</a>
                 </div>
                 <div class="visit-map">
-                    <div class="map-placeholder">
-                        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80&fit=crop" alt="Lokasi Kopi Rimba">
-                        <div class="map-pin">📍 Kopi Rimba</div>
-                    </div>
+                    <iframe class="map-embed" src="https://maps.google.com/maps?q=Jl.%20Hutan%20Raya%20No.%2012%2C%20Kota%20Wisata&t=&z=15&ie=UTF8&iwloc=&output=embed" title="Peta lokasi Kopi Rimba" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Hutan+Raya+No.+12+Kota+Wisata" target="_blank" rel="noopener" class="map-open-link">Buka di Google Maps</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta-banner">
+    <section class="cta-banner reveal">
         <div class="cta-banner-inner">
             <h2>Mulai Harimu dengan<br>Kopi yang <em>Tepat.</em></h2>
             <p>Reservasi meja sekarang dan dapatkan free upgrade size untuk kunjungan pertamamu.</p>
