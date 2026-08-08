@@ -19,6 +19,8 @@ const translations = {
         "tag-1": "Full Stack Web Development",
         "tag-2": "Psikologi & Konsultasi HR",
         "tag-3": "Seluruh Indonesia · Remote",
+        "hv-tech-badge": "Tech",
+        "hv-psych-badge": "Psikologi",
         "tick-1": "Web Development",
         "tick-2": "Konsultasi Psikologi",
         "tick-3": "UI Templates",
@@ -107,6 +109,8 @@ const translations = {
         "tag-1": "Full Stack Web Development",
         "tag-2": "Psychology & HR Consulting",
         "tag-3": "Indonesia · Remote",
+        "hv-tech-badge": "Tech",
+        "hv-psych-badge": "Psychology",
         "tick-1": "Web Development",
         "tick-2": "Psychology Consulting",
         "tick-3": "UI Templates",
@@ -217,3 +221,40 @@ document.querySelectorAll('.mobile-link').forEach(function(link) {
         document.getElementById('hamburger').classList.remove('open');
     });
 });
+
+if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(function(el) {
+        revealObserver.observe(el);
+    });
+
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const sections = Array.from(navLinks)
+        .map(function(link) {
+            const id = link.getAttribute('href');
+            return id && id.charAt(0) === '#' ? document.querySelector(id) : null;
+        })
+        .filter(Boolean);
+
+    const sectionObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                navLinks.forEach(function(link) {
+                    link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+                });
+            }
+        });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+
+    sections.forEach(function(section) {
+        sectionObserver.observe(section);
+    });
+}
