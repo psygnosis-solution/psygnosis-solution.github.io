@@ -100,6 +100,7 @@ const translations = {
         "sec-portfolio": "Portfolio",
         "portfolio-view": "Lihat Demo",
         "portfolio-1-desc": "Landing page premium untuk kafe dengan konsep alam. Navbar dinamis, galeri foto, section menu interaktif, dan integrasi WhatsApp.",
+        "portfolio-2-desc": "Microsite untuk konsultan psikologi dan HR. Filter layanan interaktif, section proses kerja, galeri, dan integrasi WhatsApp.",
         "portfolio-link": "Lihat Demo →",
         "portfolio-soon-title": "Project Berikutnya",
         "portfolio-soon-desc": "Sedang dikerjakan dan akan segera ditambahkan di sini.",
@@ -208,6 +209,7 @@ const translations = {
         "sec-portfolio": "Portfolio",
         "portfolio-view": "View Demo",
         "portfolio-1-desc": "Premium landing page for a nature-themed cafe. Dynamic navbar, photo gallery, interactive menu section, and WhatsApp integration.",
+        "portfolio-2-desc": "Microsite for a psychology and HR consulting firm. Interactive service filters, process section, gallery, and WhatsApp integration.",
         "portfolio-link": "View Demo →",
         "portfolio-soon-title": "Next Project",
         "portfolio-soon-desc": "Currently in progress and will be added here soon.",
@@ -225,6 +227,14 @@ const PORTFOLIO = [
         tags: ['HTML', 'CSS', 'JavaScript'],
         live: true,
         descKey: 'portfolio-1-desc'
+    },
+    {
+        name: 'Titik Tumbuh',
+        image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80&fit=crop',
+        link: 'https://psygnosis-solution.github.io/portofolio/titik-tumbuh',
+        tags: ['HTML', 'CSS', 'JavaScript'],
+        live: true,
+        descKey: 'portfolio-2-desc'
     }
 ];
 
